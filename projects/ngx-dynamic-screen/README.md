@@ -1,9 +1,6 @@
 
 # ngx-dynamic-screen
 
-## Construção de rotas (páginas) a partir de componentes gerados dinamicamente através de um arquivo json
-
-
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
  <a href="#roadmap">Roadmap</a> • 
@@ -11,10 +8,14 @@
  <a href="#autor">Autor</a>
 </p>
 
-
-# objetivo
-
+# Ngx Dynamic Screen Builder
 Criar e manter uma Single Page Application de maneira totalmente dinâmica e reutilizável.
+
+
+# Quickstart
+Primeiros passos:
+
+Instalar a lib com:<code>npm install ngx-dynamic-screen</code>
 
 # roadmap
 

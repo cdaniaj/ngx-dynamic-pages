@@ -1,0 +1,6 @@
+<ng-container *ngFor="let component of routeComponents">
+    <ng-template 
+      [inputs]="component.inputs"
+      [dynamic-component]="component | getDynamicComponent :component.componentName | async"
+    ></ng-template>
+</ng-container>
