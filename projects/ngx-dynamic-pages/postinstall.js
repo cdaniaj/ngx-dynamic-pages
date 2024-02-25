@@ -18,7 +18,7 @@ const preJson = `[
 ]`;
 
 // Caminho do arquivo a ser gerado
-const caminhoArquivo = './jsonParameterize.json';
+const caminhoArquivo = 'jsonParameterize.json';
 
 // Escrever no arquivo
 fs.writeFileSync(caminhoArquivo, preJson, 'utf-8');
