@@ -1,19 +1,19 @@
 import { Inject, Injectable } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { IDynamicScreenConfig } from './core/interfaces/dynamic-screen-config.interface';
+import { IDynamicPagesConfig } from './core/interfaces/dynamic-pages-config.interface';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NgxDynamicScreenService {
+export class NgxDynamicPagesService {
 
   private components$ = new Subject();
-  private config$ = new BehaviorSubject<IDynamicScreenConfig>({} as IDynamicScreenConfig);
+  private config$ = new BehaviorSubject<IDynamicPagesConfig>({} as IDynamicPagesConfig);
 
   constructor(
     private router: Router,
-    @Inject('config') private configuration: IDynamicScreenConfig
+    @Inject('config') private configuration: IDynamicPagesConfig
   ) {
     this.config$.next(this.configuration);
   }
@@ -26,7 +26,7 @@ export class NgxDynamicScreenService {
     });
   }
 
-  public getDynamicScreenConfig(): Observable<IDynamicScreenConfig> {
+  public getDynamicPagesConfig(): Observable<IDynamicPagesConfig> {
     return this.config$;
   }
 

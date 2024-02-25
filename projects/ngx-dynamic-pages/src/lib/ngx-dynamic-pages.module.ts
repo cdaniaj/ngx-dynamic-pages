@@ -1,17 +1,17 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { NgxDynamicScreenComponent } from './ngx-dynamic-screen.component';
-import { NgxDynamicScreenService } from './ngx-dynamic-screen.service';
+import { NgxDynamicPagesComponent } from './ngx-dynamic-pages.component';
+import { NgxDynamicPagesService } from './ngx-dynamic-pages.service';
 import { DynamicComponentDirective } from './core/directive/dynamic-component.directive';
 import { GetDynamicComponentPipe } from './core/pipes/get-component.pipe';
-import { IDynamicScreenConfig } from './core/interfaces/dynamic-screen-config.interface';
 import { CommonModule } from '@angular/common';
 import { DynamicSelectorComponent } from './core/dynamic-selector/dynamic-selector.component';
+import { IDynamicPagesConfig } from './core/interfaces/dynamic-pages-config.interface';
 
 
 
 @NgModule({
   declarations: [
-    NgxDynamicScreenComponent,
+    NgxDynamicPagesComponent,
     DynamicComponentDirective,
     GetDynamicComponentPipe,
     DynamicSelectorComponent
@@ -20,18 +20,18 @@ import { DynamicSelectorComponent } from './core/dynamic-selector/dynamic-select
     CommonModule
   ],
   exports: [
-    NgxDynamicScreenComponent,
+    NgxDynamicPagesComponent,
     DynamicSelectorComponent
   ],
   providers: [
-    NgxDynamicScreenService
+    NgxDynamicPagesService
   ]
 })
-export class NgxDynamicScreenModule {
-  static forRoot(configuration: IDynamicScreenConfig): ModuleWithProviders<NgxDynamicScreenModule> {
+export class NgxDynamicPagesModule {
+  static forRoot(configuration: IDynamicPagesConfig): ModuleWithProviders<NgxDynamicPagesModule> {
     return {
-      ngModule: NgxDynamicScreenModule,
-      providers: [NgxDynamicScreenService, { provide: 'config', useValue: configuration }]
+      ngModule: NgxDynamicPagesModule,
+      providers: [NgxDynamicPagesService, { provide: 'config', useValue: configuration }]
     };
   }
 }

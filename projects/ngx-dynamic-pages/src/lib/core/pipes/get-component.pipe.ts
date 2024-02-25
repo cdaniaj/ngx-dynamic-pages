@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from "@angular/core";
-import { NgxDynamicScreenService } from "../../ngx-dynamic-screen.service";
+import { NgxDynamicPagesService } from "../../ngx-dynamic-pages.service";
 import { Observable } from "rxjs";
 
 @Pipe({
@@ -8,13 +8,13 @@ import { Observable } from "rxjs";
 })
 export class GetDynamicComponentPipe implements PipeTransform {
 
-    constructor(private service: NgxDynamicScreenService) {}
+    constructor(private service: NgxDynamicPagesService) {}
 
     transform(value: any, key: string): Observable<any> {
         return new Observable<any>((observer) => {
-            this.service.getDynamicScreenConfig()
+            this.service.getDynamicPagesConfig()
             .subscribe(config => {
-                let findComponent = config?.storeComponents.find(comp => comp.key === key)?.component;
+                let findComponent = config?.storeComponents.find((comp: any) => comp.key === key)?.component;
                 observer.next(findComponent);
             });
         });

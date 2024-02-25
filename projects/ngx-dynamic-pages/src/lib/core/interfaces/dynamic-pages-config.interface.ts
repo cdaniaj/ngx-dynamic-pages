@@ -1,6 +1,6 @@
 import { IJsonParameterize } from "./json-parameterize.interface";
 
-export interface IDynamicScreenConfig {
+export interface IDynamicPagesConfig {
     jsonParameterize: IJsonParameterize[];
     storeComponents: any[];
 }

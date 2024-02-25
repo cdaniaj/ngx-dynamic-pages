@@ -1,5 +1,5 @@
 
-# ngx-dynamic-screen
+# ngx-dynamic-pages
 
 ## Construção de rotas (páginas) a partir de componentes gerados dinamicamente através de um arquivo json
 

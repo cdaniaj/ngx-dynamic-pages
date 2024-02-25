@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxDynamicScreenService } from './ngx-dynamic-screen.service';
+import { NgxDynamicPagesService } from './ngx-dynamic-pages.service';
 
 @Component({
-  selector: 'ngx-dynamic-screen',
+  selector: 'ngx-dynamic-Pages',
   template: `
     <ngx-dynamic-selector [routeComponents]="routeComponents"></ngx-dynamic-selector>
   `,
   styles: []
 })
-export class NgxDynamicScreenComponent implements OnInit {
+export class NgxDynamicPagesComponent implements OnInit {
   routeComponents!: any[];
 
-  constructor(private service: NgxDynamicScreenService) {
+  constructor(private service: NgxDynamicPagesService) {
     this.service.listenRoute();
   }
 

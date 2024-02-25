@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-dynamic-screen": {
+    "ngx-dynamic-pages": {
       "projectType": "library",
-      "root": "projects/ngx-dynamic-screen",
-      "sourceRoot": "projects/ngx-dynamic-screen/src",
+      "root": "projects/ngx-dynamic-pages",
+      "sourceRoot": "projects/ngx-dynamic-pages/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-dynamic-screen/ng-package.json"
+            "project": "projects/ngx-dynamic-pages/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-dynamic-screen/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-dynamic-pages/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-dynamic-screen/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-dynamic-pages/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ngx-dynamic-screen/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-dynamic-pages/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
