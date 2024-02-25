@@ -3,7 +3,7 @@ const fs = require('fs');
 // Seu código para gerar informações
 const preJson = `[
     {
-        "route": /home,
+        "route": "/home",
         "components": [
             {
                 "componentName": "my-custom-button",
