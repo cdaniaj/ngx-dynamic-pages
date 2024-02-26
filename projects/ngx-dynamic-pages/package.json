@@ -14,8 +14,7 @@
   "files": [
     "dist",
     "projects",
-    "postinstall.js",
-    "jsonParameterize.json"
+    "postinstall.js"
   ],
   "sideEffects": false
 }

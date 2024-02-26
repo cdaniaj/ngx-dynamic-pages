@@ -22,6 +22,9 @@ const preJson = `[
 const caminhoArquivoProjeto = path.resolve(process.cwd(), 'src/app/app.module.ts');
 const importacaoBiblioteca = `import { NgxDynamicPagesModule } from 'ngx-dynamic-pages';`;
 
+// Navega para fora do diretório node_modules
+process.chdir('../../');
+
 // Lê o código do projeto
 const codigoProjeto = fs.readFileSync(caminhoArquivoProjeto, 'utf-8');
 
