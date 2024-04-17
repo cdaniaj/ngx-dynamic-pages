@@ -1,5 +1,5 @@
 {
-  "name": "ngx-dynamic-pages",
+  "name": "ngx-dynamic-pages-lib",
   "version": "1.1.6",
   "scripts": {
     "ng": "ng",

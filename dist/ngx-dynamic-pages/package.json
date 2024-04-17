@@ -1,6 +1,6 @@
 {
   "name": "ngx-dynamic-pages",
-  "version": "1.0.0",
+  "version": "2.0.5",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -8,11 +8,6 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "files": [
-    "dist",
-    "projects",
-    "postinstall.js"
-  ],
   "sideEffects": false,
   "module": "fesm2015/ngx-dynamic-pages.mjs",
   "es2020": "fesm2020/ngx-dynamic-pages.mjs",
