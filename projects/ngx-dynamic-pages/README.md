@@ -1,6 +1,6 @@
 
 <center>
-  <img style="border-radius: 20px" src="./src/lib/assets/Dynamic pages.png" width="300">
+  <img style="border-radius: 20px" src="../ngx-dynamic-pages/assets/dynamic-pages.png" width="300">
 
   <br/>
 
@@ -160,7 +160,7 @@ export class AppRoutingModule { }
 
 <br/>
 Como resultado, temos:<br/>
-<img src="./src/lib/assets/image.png">
+<img src="../ngx-dynamic-pages/assets/image.png">
 
 
 <br/>

@@ -8,5 +8,19 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "description": "Construa páginas como quebra-cabeça",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlosDaniel128/ngx-dynamic-pages-lib"
+  },
+  "license": "MIT",
+  "keywords": [
+    "front-end",
+    "angular",
+    "typescript",
+    "architecture",
+    "javascript",
+    "dynamic-components"
+  ]
 }
