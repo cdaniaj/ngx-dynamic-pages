@@ -1,6 +1,6 @@
 {
   "name": "ngx-dynamic-pages",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
@@ -9,6 +9,20 @@
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
+  "description": "Construa páginas como quebra-cabeça",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlosDaniel128/ngx-dynamic-pages-lib"
+  },
+  "license": "MIT",
+  "keywords": [
+    "front-end",
+    "angular",
+    "typescript",
+    "architecture",
+    "javascript",
+    "dynamic-components"
+  ],
   "module": "fesm2015/ngx-dynamic-pages.mjs",
   "es2020": "fesm2020/ngx-dynamic-pages.mjs",
   "esm2020": "esm2020/ngx-dynamic-pages.mjs",
