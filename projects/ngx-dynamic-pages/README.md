@@ -1,6 +1,6 @@
 
 <center>
-  <img style="border-radius: 20px" src="https://i.ibb.co/2ksVLg5/dynamic-pages.png" width="300">
+    <h1>Dynamic Pages</h1>
 
   <br/>
 

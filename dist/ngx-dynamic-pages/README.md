@@ -1,6 +1,6 @@
 
 <center>
-  <img style="border-radius: 20px" src="./assets/dynamic-pages.png" width="300">
+    <h1>Dynamic Pages</h1>
 
   <br/>
 
@@ -159,9 +159,11 @@ export class AppRoutingModule { }
 </pre>
 
 <br/>
-Como resultado, temos:<br/>
-<img src="./assets/image.png">
+Como resultado, temos:
 
+<br/>
+
+  <img style="border-radius: 20px" src="https://i.ibb.co/vwNjj1P/image.png" width="400">
 
 <br/>
 <br/>
