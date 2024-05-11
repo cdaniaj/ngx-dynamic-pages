@@ -164,7 +164,23 @@ export class AppRoutingModule { }
 </pre>
 
 <br/>
-Como resultado, temos:
+<br/>
+
+<br/>
+<br/>
+
+**6. Atualize o arquivo <code>app.component.html</code> com o wrapper dinâmico:**
+
+```
+<ngx-dynamic-Pages></ngx-dynamic-Pages>
+
+```
+
+
+
+<br/>
+<br/>
+Ao navegarmos para a rota <code>/home</code>, configurada no json, o resultado será:
 
 <br/>
 
@@ -257,7 +273,17 @@ const routes: Routes = [
 export class AppRoutingModule { }
 </pre>
 
+<br/>
+<br/>
 
+**4. Wrapper fantasma**:
+
+No arquivo <code>app.component.html</code> temos o seguinte código:
+
+```
+<ngx-dynamic-pages></ngx-dynamic-pages>
+```
+No qual consiste em um ponto de entrada para os componentes criados dinâmicamente. Muito parecido com o <code>router-outlet</code>
 
 <br/>
 <br/>

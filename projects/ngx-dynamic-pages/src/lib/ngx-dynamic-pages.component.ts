@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgxDynamicPagesService } from './ngx-dynamic-pages.service';
 
 @Component({
-  selector: 'ngx-dynamic-Pages',
+  selector: 'ngx-dynamic-pages',
   template: `
     <ngx-dynamic-selector [routeComponents]="routeComponents"></ngx-dynamic-selector>
   `,

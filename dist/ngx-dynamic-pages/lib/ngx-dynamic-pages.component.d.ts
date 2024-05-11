@@ -7,5 +7,5 @@ export declare class NgxDynamicPagesComponent implements OnInit {
     constructor(service: NgxDynamicPagesService);
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgxDynamicPagesComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NgxDynamicPagesComponent, "ngx-dynamic-Pages", never, {}, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NgxDynamicPagesComponent, "ngx-dynamic-pages", never, {}, {}, never, never, false, never>;
 }

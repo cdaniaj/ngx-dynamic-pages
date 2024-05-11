@@ -170,12 +170,12 @@ class NgxDynamicPagesComponent {
     }
 }
 NgxDynamicPagesComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.2.10", ngImport: i0, type: NgxDynamicPagesComponent, deps: [{ token: NgxDynamicPagesService }], target: i0.ɵɵFactoryTarget.Component });
-NgxDynamicPagesComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "15.2.10", type: NgxDynamicPagesComponent, selector: "ngx-dynamic-Pages", ngImport: i0, template: `
+NgxDynamicPagesComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "15.2.10", type: NgxDynamicPagesComponent, selector: "ngx-dynamic-pages", ngImport: i0, template: `
     <ngx-dynamic-selector [routeComponents]="routeComponents"></ngx-dynamic-selector>
   `, isInline: true, dependencies: [{ kind: "component", type: DynamicSelectorComponent, selector: "ngx-dynamic-selector", inputs: ["routeComponents"] }] });
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.2.10", ngImport: i0, type: NgxDynamicPagesComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'ngx-dynamic-Pages', template: `
+            args: [{ selector: 'ngx-dynamic-pages', template: `
     <ngx-dynamic-selector [routeComponents]="routeComponents"></ngx-dynamic-selector>
   ` }]
         }], ctorParameters: function () { return [{ type: NgxDynamicPagesService }]; } });
