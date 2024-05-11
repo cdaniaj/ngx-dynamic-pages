@@ -13,6 +13,13 @@
   <a href="#autor">Autor</a>
 </p>
 
+<br/>
+<br/>
+
+<p align="center">
+  <a href="https://github.com/carlosDaniel128/example-dynamic-pages">Exemplo de   implementação</a>
+</p>
+
 
 <br/>
 <br/>
