@@ -9,10 +9,10 @@
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "description": "Construa páginas como quebra-cabeça",
+  "description": "Build pages like a puzzle",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carlosDaniel128/ngx-dynamic-pages-lib"
+    "url": "https://github.com/cdaniaj/ngx-dynamic-pages"
   },
   "license": "MIT",
   "keywords": [
