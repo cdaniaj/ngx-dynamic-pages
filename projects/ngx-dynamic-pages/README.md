@@ -1,23 +1,22 @@
-
 <center>
-    <h1>Dynamic Pages - Crie SPAs Dinâmicas e Reutilizáveis com JSON</h1>
+    <h1>**Dynamic Pages – Create Dynamic and Reusable SPAs with JSON**</h1>
 
   <br/>
 
-  Construa Single Page Applications de forma totalmente dinâmica e reutilizável. Concentre-se na qualidade dos seus componentes e defina sua estrutura e conteúdo através de um arquivo JSON.
+  Build Single Page Applications in a fully dynamic and reusable way. Focus on the quality of your components and define their structure and content through a JSON file.
 </center>
 
 <p align="center">
-  <a href="#primeiros-passos">Primeiros passos</a> • 
-  <a href="#como-funciona">Como funciona</a> • 
-  <a href="#autor">Autor</a>
+  <a href="#getting-started">Getting Started</a> • 
+  <a href="#how-it-works">How it works</a> • 
+  <a href="#author">Author</a>
 </p>
 
 <br/>
 <br/>
 
 <p align="center">
-  <a href="https://github.com/carlosDaniel128/example-dynamic-pages">Exemplo de   implementação</a>
+  <a href="https://github.com/carlosDaniel128/example-dynamic-pages">Implementation Example</a>
 </p>
 
 
@@ -36,15 +35,15 @@
 <br/>
 <br/>
 
-# Primeiros passos
+# Getting Started
 
-**1. Instalação:**
+**1. Installation:**
 <pre>npm install ngx-dynamic-pages</pre>
 
 
-**2. Crie um arquivo para registrar seus componentes:**
+**2. Create a file to register your components:**
 
-Este arquivo retornará uma lista de componentes disponíveis para serem consumidos através do JSON Parametrizado.
+This file will return a list of components available to be consumed through the Parameterized JSON.
 
 <code>store-components.ts</code>
 
@@ -73,9 +72,9 @@ export const components = [
 <br/>
 
 
-**3. Defina a estrutura da sua SPA com um arquivo JSON:**
+**3. Define your SPA structure with a JSON file:**
 
-<code>json-parametrizado.ts</code>
+<code>json-parameterized.ts</code>
 <pre>
 import { IJsonParameterize } from "ngx-dynamic-pages";
 
@@ -116,7 +115,7 @@ export const json: IJsonParameterize[] = [
 <br/>
 <br/>
 
-**4. Configure o módulo <code>NgxDynamicPagesModule</code> com os arquivos criados:**
+**4. Configure the <code>NgxDynamicPagesModule</code> with the files created:**
 
 <pre>
 @NgModule({
@@ -148,10 +147,10 @@ export class AppModule { }
 <br/>
 <br/>
 
-**5. Configure o roteamento raiz com um path coringa:**
+**5. Configure the root routing file with a wildcard path:**
 
 
-Configurar o arquivo de roteamento raiz com um path coringa (**), isto é, aceita qualquer url definida no JSON Parametrizado:
+Configure the root routing file with a wildcard path (**), that is, it accepts any URL defined in the Parameterized JSON:
 
 <pre>
 import { NgxDynamicPagesComponent } from 'ngx-dynamic-pages';
@@ -176,18 +175,15 @@ export class AppRoutingModule { }
 <br/>
 <br/>
 
-**6. Atualize o arquivo <code>app.component.html</code> com o wrapper dinâmico:**
+**6. Update the <code>app.component.html</code> file with the dynamic wrapper:**
 
 ```
-<ngx-dynamic-Pages></ngx-dynamic-Pages>
-
+<ngx-dynamic-pages></ngx-dynamic-pages>
 ```
-
-
 
 <br/>
 <br/>
-Ao navegarmos para a rota <code>/home</code>, configurada no json, o resultado será:
+When navigating to the <code>/home</code> route configured in the JSON, the result will be:
 
 <br/>
 
@@ -198,12 +194,12 @@ Ao navegarmos para a rota <code>/home</code>, configurada no json, o resultado s
 <br/>
 <br/>
 
-# Como funciona
-Dynamic Pages simplifica o desenvolvimento de SPAs. Ao invés de criar rotas individuais para cada página, você define a estrutura e o conteúdo da sua aplicação através de um arquivo JSON.
+# How it works
+Dynamic Pages simplifies SPA development. Instead of creating individual routes for each page, you define the structure and content of your application through a JSON file.
 
-**1. Registro de Componentes:**
+**1. Component Registration:**
 
-O arquivo <code>store-components.ts</code> armazena a lista de componentes disponíveis para uso na sua aplicação. Cada componente possui um identificador (<code>key</code>) que será utilizado no arquivo JSON para referenciá-lo.
+The <code>store-components.ts</code> file stores the list of components available for use in your application. Each component has an identifier (<code>key</code>) that will be used in the JSON file to reference it.
 
 <pre>
 export const components = [
@@ -222,18 +218,18 @@ export const components = [
 ];
 </pre>
 
-| Propriedades  | Descrição                                                                                                               |
-| -----------   | -----------                                                                                                             |
-| key           | Identificador do componente. Usado posteriormente no <code>json-parametrizado.ts</code> para ser renderizado na página  |
-| component     | Classe do componente                                                                                                    | 
+| Properties    | Description                                                                                                               |
+| -----------   | -----------                                                                                                               |
+| key           | Component identifier. Later used in <code>json-parameterized.ts</code> to be rendered on the page                         |
+| component     | Component class                                                                                                           | 
 
 
 <br/>
 <br/>
 
-**2. Definição da Estrutura:**  
+**2. Structure Definition:**  
 
-O arquivo <code>json-parametrizado.ts</code> define a estrutura da sua SPA. Ele contém uma lista de rotas, onde cada rota define os componentes a serem exibidos e seus respectivos parâmetros.
+The <code>json-parameterized.ts</code> file defines the structure of your SPA. It contains a list of routes, where each route defines the components to be displayed and their respective parameters.
 
 <pre>
   [
@@ -251,19 +247,19 @@ O arquivo <code>json-parametrizado.ts</code> define a estrutura da sua SPA. Ele 
   ]
 </pre>
 
-| Propriedades          | Descrição                                                                                   |
-| -----------           | -----------                                                                                 |
-| route                 | Path que acessamos na url do navegador, ex: localhost:4200/home                         |
-| components            | Lista de componentes que serão criados na página                                            | 
-| componentName         | Identificador do componente, o mesmo valor registrado em <code>store-components.ts</code>   |
-| inputs                | Dados de entrada do componente                                                              |
+| Properties            | Description                                                                                   |
+| -----------           | -----------                                                                                   |
+| route                 | Path accessed in the browser URL, e.g., localhost:4200/home                                  |
+| components            | List of components to be created on the page                                                  | 
+| componentName         | Component identifier, same value registered in <code>store-components.ts</code>               |
+| inputs                | Component input data                                                                          |
 
 <br/>
 <br/>
 
-**3. Roteamento Dinâmico:**
+**3. Dynamic Routing:**
 
-O componente <code>NgxDynamicPagesComponent</code>, configurado com um path coringa (<code>**</code>) no arquivo <code>app-routing.module.ts</code>, intercepta todas as rotas definidas no arquivo JSON. Ele então utiliza as informações do JSON para criar os componentes correspondentes, com os parâmetros especificados.
+The <code>NgxDynamicPagesComponent</code>, configured with a wildcard path (<code>**</code>) in the <code>app-routing.module.ts</code> file, intercepts all routes defined in the JSON file. It then uses the JSON information to create the corresponding components with the specified parameters.
 
 <pre>
 const routes: Routes = [
@@ -283,25 +279,24 @@ export class AppRoutingModule { }
 <br/>
 <br/>
 
-**4. Wrapper fantasma**:
+**4. Ghost Wrapper**:
 
-No arquivo <code>app.component.html</code> temos o seguinte código:
+In the <code>app.component.html</code> file we have the following code:
 
 ```
 <ngx-dynamic-pages></ngx-dynamic-pages>
 ```
-No qual consiste em um ponto de entrada para os componentes criados dinâmicamente. Muito parecido com o <code>router-outlet</code>
+Which serves as an entry point for the dynamically created components. Very similar to <code>router-outlet</code>
 
 <br/>
 <br/>
 <br/>
 
 
-# Autor
+# Author
 
 Carlos Daniel &nbsp;&nbsp;• &nbsp;&nbsp;Software Engineer  &nbsp;&nbsp;• &nbsp;&nbsp;AI enthusiast
 
 
 <pre>
-"Good logic helps us solve problems in our lives, but feelings, perceptions and love help solve what we cannot with logic."
-</pre>
+"Good logic helps us solve problems in our lives, but feelings, perceptions and love help solve what we cannot
